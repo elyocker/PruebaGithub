@@ -13,19 +13,19 @@
 <table class="table">
     <thead class="thead-dark ">
       <tr class="center">
-        <th scope="col">id</th>
         <th scope="col">nombre</th>
-        <th scope="col">email</th>
-        <th scope="col">rol</th>
+        <th scope="col">descripcion</th>
+        <th scope="col">precio</th>
+        <th scope="col">cantidad</th>
       </tr>
     </thead>
     <tbody>
-        @foreach ($users as $item)
+        @foreach ($productos as $item)
             <tr>
-                <th scope="row">{{$item->id}}</th>
-                <td>{{$item->name}}</td>
-                <td>{{$item->email}}</td>
-                <td>{{$item->rol}}</td>
+                <th scope="row">{{$item->nombre}}</th>
+                <td>{{$item->descripcion}}</td>
+                <td>{{$item->precio}}</td>
+                <td>{{$item->cantidad}}</td>
             </tr>
         @endforeach
     </tbody>

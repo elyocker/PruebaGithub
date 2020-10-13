@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,9 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/users/index', [UsuariosController::class, 'index'])->name('usuarios');
+
+Route::get('/producto', [ProductoController::class, 'index'])->name('productos');
+
+Route::get('/solicitar', function () {
+    return view('solicitar');
+})->name('solicitar');
