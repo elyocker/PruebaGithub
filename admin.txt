@@ -1,0 +1,26 @@
+laravel new Domotica_laravel 
+
+composer require laravel/ui
+
+php artisan ui bootstrap --auth
+
+npm install && npm run dev
+
+composer require jeroennoten/laravel-adminlte
+
+php artisan ui:controllers
+
+php artisan adminlte:install
+
+
+//SACAR DEL GIT HUB	
+
+composer install
+
+El siguiente paso es copiar el contenido del archivo .env.example en un nuevo archivo con el nombre .env. El archivo .env.example lo encuentras en la raíz del proyecto de Laravel. Pero espera, te tengo una solución más rápida y sencilla utilizando la Terminal. Dentro de la carpeta de tu proyecto ejecuta el siguiente comando:
+
+cp .env.example .env
+La APP_KEY es una cadena de carácteres generada aleatoriamente por Laravel que utiliza para todas las cookies cifradas, como las cookies de sesión. Para generar la APP_KEY del proyecto ejecuta el siguiente comando:
+
+php artisan key:generate
+Ahora ejecuta servidor y abre la dirección en el navegador
