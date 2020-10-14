@@ -18,8 +18,8 @@ class CreateSucursalesTable extends Migration
             $table->integer('nit');
             $table->string('nombre_sucursal');
             $table->string('direccion');
-            $table->string('barrio');
-            $table->integer('telefono');
+            $table->string('barrio')->nullable();
+            $table->integer('telefono')->nullable();
             $table->bigInteger('id_empresas')->unsigned();
             $table->foreign('id_empresas')->references('id')->on('empresas');
             $table->bigInteger('id_municipio')->unsigned();

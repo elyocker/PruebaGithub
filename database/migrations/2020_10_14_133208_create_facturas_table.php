@@ -15,9 +15,9 @@ class CreateFacturasTable extends Migration
     {
         Schema::create('facturas', function (Blueprint $table) {
             $table->id();
-            $table->integer('cedula_cliente');
-            $table->string('nombre_cliente');
-            $table->integer('telefono');
+            $table->integer('cedula_cliente')->nullable();
+            $table->string('nombre_cliente')->nullable();
+            $table->integer('telefono')->nullable();
             $table->timestamp('fecha_facturacion');
             $table->integer('iva');
             $table->integer('total_iva');
