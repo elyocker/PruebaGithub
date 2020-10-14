@@ -22,9 +22,9 @@ class CreateUsersTable extends Migration
             $table->string('direccion')->nullable();
             $table->integer('telefono')->nullable();
             $table->string('rol');
-            $table->rememberToken();
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent();
+            $table->bigInteger('id_empresa')->unsigned();
+            $table->foreign('id_empresa')->references('id')->on('empresas');
+            $table->timestamps();
         });
     }
 
