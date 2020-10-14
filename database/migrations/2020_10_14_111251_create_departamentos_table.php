@@ -17,7 +17,7 @@ class CreateDepartamentosTable extends Migration
             $table->id();
             $table->string('nombre_departamento');
             $table->integer('codigo_departamento');
-            $table->integer('region_departamento');
+            $table->string('region_departamento');
             $table->timestamps();
         });
     }

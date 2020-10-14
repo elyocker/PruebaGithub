@@ -15,12 +15,11 @@ class CreateProductosTable extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre')->unique();
-            $table->string('descripcion')->unique();
-            $table->integer('cantidad')->unique();
-            $table->integer('precio');
+            $table->string('nombre');
+            $table->string('descripcion');
             $table->integer('cantidad');
             $table->integer('precio');
+            $table->integer('codigo');
             $table->timestamp('fecha_garantia');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
