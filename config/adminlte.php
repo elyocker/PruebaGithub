@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>SIIGO</b>bodega',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -243,32 +243,20 @@ return [
         ],
         [
             'text'    => 'Productos',
-            'icon'    => 'fas fa-dropdox',
-            'submenu' => [
-                [
-                    'text' => 'herramientas',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'comida',
-                    'url'  => '#',
-                ],
-                [
-                    'text' => 'accesorios',
-                    'url'  => '#',
-                ],
-            ],
+            'icon'    => 'fas fa-box-open',
+            'url'  => 'producto',
         ],
         [
             'text' => 'Solicitar articulos',
             'url'  => 'solicitar',
+            'icon'    => 'fas fa-shopping-cart',
         ],
         // ['header' => 'account_settings'],
-        // [
-        //     'text' => 'profile',
-        //     'url'  => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-user',
-        // ],
+        [
+            'text' => 'Adicionar',
+            'url'  => 'adicionar',
+            'icon' => 'fas fa-cash-register',
+        ],
         // [
         //     'text' => 'change_password',
         //     'url'  => 'admin/settings',

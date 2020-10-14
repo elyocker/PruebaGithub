@@ -31,3 +31,7 @@ Route::get('/producto', [ProductoController::class, 'index'])->name('productos')
 Route::get('/solicitar', function () {
     return view('solicitar');
 })->name('solicitar');
+
+Route::get('/adicionar', function () {
+    return view('adicionar');
+})->name('adicionar');
