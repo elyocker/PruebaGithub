@@ -20,9 +20,9 @@ class CreateSucursalesTable extends Migration
             $table->string('direccion');
             $table->string('barrio');
             $table->integer('telefono');
-            $table->foreign('id_empresas')->references('id')->on('categories');
-            $table->foreign('id_municipio')->references('id_municipios')->on('categories');
-            $table->foreign('id_departamento')->references('id_departamentos')->on('categories');
+            $table->foreign('id_empresas')->references('id')->on('empresas');
+            $table->foreign('id_municipio')->references('id')->on('municipios');
+            $table->foreign('id_departamento')->references('id')->on('´departamentos');
             $table->timestamps();
         });
     }

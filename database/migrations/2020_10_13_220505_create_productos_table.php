@@ -17,9 +17,13 @@ class CreateProductosTable extends Migration
             $table->id();
             $table->string('nombre')->unique();
             $table->string('descripcion')->unique();
+            $table->integer('cantidad')->unique();
             $table->integer('precio');
             $table->integer('cantidad');
-            $table->timestamps();
+            $table->integer('precio');
+            $table->timestamp('fecha_garantia');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
