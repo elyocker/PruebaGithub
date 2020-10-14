@@ -15,7 +15,7 @@ return [
     */
 
     'title' => '',
-    'title_prefix' => 'Aero | ',
+    'title_prefix' => 'Sigo | ',
     'title_postfix' => '',
 
     /*
@@ -244,7 +244,7 @@ return [
         [
             'text'    => 'Productos',
             'icon'    => 'fas fa-box-open',
-            'url'  => 'producto',
+            'url'  => 'productos',
         ],
         [
             'text' => 'Solicitar articulos',
@@ -352,7 +352,7 @@ return [
             ],
         ],
         'Chartjs' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',

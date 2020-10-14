@@ -27,7 +27,7 @@ Auth::routes();
 
 Route::get('/users/index', [UsuariosController::class, 'index'])->name('usuarios');
 
-Route::get('/producto', [ProductoController::class, 'index'])->name('productos');
+// Route::get('/producto', [ProductoController::class, 'index'])->name('productos');
 
 Route::get('/solicitar', function () {
     return view('solicitar');
@@ -37,4 +37,5 @@ Route::get('/adicionar', function () {
     return view('adicionar');
 })->name('adicionar');
 
-Route::get('/sucursales', [SucursalesController::class, 'index'])->name('sucursales');
+Route::resource('sucursales', SucursalesController::class);// se llama todos los recuersos de la vista sucursales 
+Route::resource('productos', ProductoController::class);// se llama todos los recuersos de la vista productos 

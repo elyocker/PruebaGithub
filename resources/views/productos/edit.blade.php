@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Dashboard')
+@section('title', 'Productos')
 
 @section('plugins.Sweetalert2', true)
     
@@ -9,16 +9,15 @@
 @stop
 
 @section('content')
-
 <table class="table">
     <thead class="thead-dark ">
-      <tr class="center">
+    <tr class="center">
         <th scope="col">nombre</th>
         <th scope="col">descripcion</th>
         <th scope="col">precio</th>
         <th scope="col">cantidad</th>
         <th scope="col">Acciones</th>
-      </tr>
+    </tr>
     </thead>
     <tbody>
         @foreach ($productos as $item)
@@ -28,13 +27,12 @@
                 <td>{{$item->precio}}</td>
                 <td>{{$item->cantidad}}</td>
                 <td>
-                    <button class="btn btn-warning col-md-3"><i class="fas fa-pen"></i></button>
-                    <button class="btn btn-danger col-md-3"><i class="fas fa-trash"></i></button>
+                    
                 </td>
             </tr>
         @endforeach
     </tbody>
-  </table>
+</table>
 @stop
 
 
