@@ -24,8 +24,18 @@ class CreateFacturasTable extends Migration
             $table->integer('precio_producto');
             $table->integer('total_venta');
             $table->string('descripcion_venta');
+            $table->bigInteger('id_empresa')->unsigned();
+            $table->foreign('id_empresa')->references('id')->on('empresas');
+            $table->bigInteger('id_municipio')->unsigned();
+            $table->foreign('id_municipio')->references('id')->on('municipios');
+            $table->bigInteger('id_departamento')->unsigned();
+            $table->foreign('id_departamento')->references('id')->on('departamentos');
             $table->bigInteger('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id')->on('usuarios');
+            $table->bigInteger('id_venta')->unsigned();
+            $table->foreign('id_venta')->references('id')->on('ventas');
+            $table->bigInteger('id_sucursal')->unsigned();
+            $table->foreign('id_sucursal')->references('id')->on('sucursales');
         });
     }
 
