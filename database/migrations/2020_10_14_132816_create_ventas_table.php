@@ -20,6 +20,7 @@ class CreateVentasTable extends Migration
             $table->string('notificar');
             $table->integer('precio_total_venta');
             $table->timestamp('fecha_garantia');
+            $table->bigInteger('id_producto')->unsigned();
             $table->foreign('id_producto')->references('id')->on('productos');
             $table->timestamps();
         });
