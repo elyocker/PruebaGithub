@@ -257,11 +257,11 @@ return [
             'url'  => 'adicionar',
             'icon' => 'fas fa-cash-register',
         ],
-        // [
-        //     'text' => 'change_password',
-        //     'url'  => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-lock',
-        // ],
+        [
+            'text' => 'Sucursales',
+            'url'  => 'sucursales',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
         
         // ['header' => 'labels'],
         // [

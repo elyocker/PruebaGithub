@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\SucursalesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,5 @@ Route::get('/solicitar', function () {
 Route::get('/adicionar', function () {
     return view('adicionar');
 })->name('adicionar');
+
+Route::get('/sucursales', [SucursalesController::class, 'index'])->name('sucursales');
